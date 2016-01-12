@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ebe8d7" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="请选择地图"
+        android:textColor="#363532"
+        android:textSize="21sp" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="155dp"
+        android:layout_height="42dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="32dp"
+        android:layout_marginRight="13dp"
+        android:background="@drawable/confirm"
+        android:onClick="onClickToMain" />
+    
+   
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="155dp"
+        android:layout_height="42dp"
+        android:layout_alignBaseline="@+id/button1"
+        android:layout_alignBottom="@+id/button1"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="13dp"
+        android:background="@drawable/choosefromphone" />
+
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="160dip"
+        android:layout_height="160dip"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="12dp"
+        android:src="@drawable/map1_500" />
+
+    <ImageView
+        android:id="@+id/image2"
+        android:layout_width="160dip"
+        android:layout_height="160dip"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="12dp"
+        android:layout_alignTop="@+id/image1"
+        android:src="@drawable/map2_500" />
+
+                <ImageView
+                    android:id="@+id/image3"
+                    android:layout_width="160dip"
+                    android:layout_height="160dip"
+                    android:layout_alignLeft="@+id/image1"
+                    android:layout_alignTop="@+id/image4"
+                    android:src="@drawable/map3_500" />
+
+                <ImageView
+                    android:id="@+id/image4"
+                    android:layout_width="160dip"
+                    android:layout_height="160dip"
+                    android:layout_alignLeft="@+id/image2"
+                    android:layout_below="@+id/image2"
+                    android:layout_marginTop="17dp"
+                    android:src="@drawable/map4_500" />
+
+</RelativeLayout>

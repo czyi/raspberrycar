@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/controlbackground" >
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="213dp"
+        android:background="@drawable/stop_btn" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="70dp"
+        android:layout_height="127dp"
+        android:layout_alignBaseline="@+id/button1"
+        android:layout_alignBottom="@+id/button1"
+        android:layout_marginRight="26dp"
+        android:layout_toLeftOf="@+id/button1"
+        android:background="@drawable/left_btn" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="70dp"
+        android:layout_height="127dp"
+        android:layout_alignBaseline="@+id/button1"
+        android:layout_alignBottom="@+id/button1"
+        android:layout_marginLeft="26dp"
+        android:layout_toRightOf="@+id/button1"
+        android:background="@drawable/right_btn" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="127dp"
+        android:layout_height="70dp"
+        android:layout_alignBottom="@+id/button1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="120dp"
+        android:background="@drawable/forward_btn" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="127dp"
+        android:layout_height="70dp"
+        android:layout_alignLeft="@+id/button4"
+        android:layout_below="@+id/button2"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/backward_btn" />
+
+    <Button
+        android:layout_width="155dp"
+        android:layout_height="42dp"
+        android:layout_alignBaseline="@+id/button6"
+        android:layout_alignBottom="@+id/button6"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="13dp"
+        android:background="@drawable/mapnavigator"
+        android:onClick="onClickToMain" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="155dp"
+        android:layout_height="42dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/button5"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="130dp"
+        android:background="@drawable/directcontrol" />
+
+</RelativeLayout>
